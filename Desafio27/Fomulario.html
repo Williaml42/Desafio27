@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Máscara com JS</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/jquery-3.7.0.js"></script>
+        <script src="js/mascara.js"></script>
+        <script src="js/viacep.js"></script>
+    </head>
+
+    <body>
+        <div id="box">
+
+            <h2>Fomulario Via CEP</h2>
+
+            <label>Nome</label>
+            <input type="text" id="i_nome">
+
+            <label>Sobrenome</label>
+            <input type="text" id="i_sobrenome">
+
+            <label>E-mail</label>
+            <input type="text" id="i_email">
+
+            <label>CEP</label>
+            <input type="text" id="i_cep" maxlength="8" placeholder="00000-000" onblur="pesquisa_cep(this.value)">
+            
+            <label>Rua</label>
+            <input type="text" id="i_rua">
+
+            <label>Bairro</label>
+            <input type="text" id="i_bairro">
+
+            <label>Cidade</label>
+            <input type="text" id="i_cidade">
+
+            <label>Estado</label>
+            <input type="text" id="i_estado">
+
+            <input type="submit" value="Cadastrar" id="btt">
+        </div>
+    </body>
+</html>
